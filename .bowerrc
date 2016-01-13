@@ -1,0 +1,5 @@
+{
+    "directory": "/libs",
+    "proxy":"http://gv3976:Passw07Pass@proxy-g2s.intra.groupama.fr:8080",
+    "https-proxy":"http://gv3976:Passw07Pass@proxy-g2s.intra.groupama.fr:8080"
+}
