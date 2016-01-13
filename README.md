@@ -1,11 +1,6 @@
-# Building an Angular 2 Website Using Routes
-This is a simple Angular 2 website using the brand new router. It demonstrates how to build components, configure routes, 
-inject services, and use the `@Input` decorator to bind properties to components.
+# Angular 2  BootStrap
+This is an example Angular 2 and BootStrap  how to use build components, configure routes, services, and use `@Input` with the use modal BootStrap.
 
-## Dependencies
-- npm install
-- bower install
-- npm start
 ## Getting Started
 
 ```bash
