@@ -5,3 +5,4 @@ node_modules
 libs
 bower_components
 .idea
+*.log
