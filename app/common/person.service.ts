@@ -11,16 +11,18 @@ export class PersonService {
     ];
 
     getPersons(): Personnes[] {
-        console.log(this.personnes);
         return this.personnes;
     }
 
     addPersons(person: string[]): void {
-        console.log(person);
         this.personnes.push(person);
     }
 
     getIdPersons(id: number): Personnes {
         return this.personnes[id];
+    }
+    
+    removePersons(id:number):void{
+      this.personnes.splice(id,1);
     }
 }
