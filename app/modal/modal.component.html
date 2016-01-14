@@ -17,7 +17,9 @@
             <td>{{item.Firstname}}</td>
             <td>{{item.Lastname}}</td>
             <td>{{item.Email}}</td>
-            <td><button (click)="actionEdit(i)" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-pencil"></span></button> <button><span class="glyphicon glyphicon-trash"></span></button></td>
+            <td>
+              <button (click)="actionEdit(i)" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-pencil"></span></button>
+            <button (click)="actionRemove(i)"><span class="glyphicon glyphicon-trash"></span></button></td>
         </tr>
     </table>
 </div>
