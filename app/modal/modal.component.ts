@@ -14,9 +14,7 @@ export class ModalComponent {
     @Input() person:string = [];
 
     ngOnInit() {
-        console.log(this.items);
         this.items = this._PersonService.getPersons();
-        console.log(this.items);
     }
 
     constructor(private _PersonService:PersonService) {
@@ -30,7 +28,10 @@ export class ModalComponent {
     }
 
     actionEdit(index:number):void {
-        console.log(index);
         this.person = this._PersonService.getIdPersons(index);
+    }
+    
+    actionRemove(index:number):void{
+      this.items = this._PersonService.removePersons(index);
     }
 }
