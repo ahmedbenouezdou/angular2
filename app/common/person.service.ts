@@ -5,9 +5,9 @@ import {Personnes} from './person.model';
 export class PersonService {
 
     private personnes: Personnes[] = [
-        {Firstname: 'Experiment 1', Lastname: 'This is an experiment', Email:'ahmed.b.ouezdou@gmail.com'},
-        {Firstname: 'Experiment 2', Lastname: 'This is an experiment', Email:'ahmed.b.ouezdou@gmail.com'},
-        {Firstname: 'Experiment 3', Lastname: 'This is an experiment', Email:'ahmed.b.ouezdou@gmail.com'}
+        {Firstname: 'Firstname 1', Lastname: 'Lastname1', Email:'Firstname1@gmail.com'},
+        {Firstname: 'Firstname 2', Lastname: 'Lastname2', Email:'Firstname2@gmail.com'},
+        {Firstname: 'Firstname 3', Lastname: 'Lastname3', Email:'Firstname3@gmail.com'}
     ];
 
     getPersons(): Personnes[] {
