@@ -1,0 +1,42 @@
+<div class="row">
+    <div class="col-lg-2">
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+            <span class="glyphicon glyphicon-plus"></span>
+        </button>
+    </div>
+    <div class="col-lg-offset-7">
+        <div class="input-group">
+
+            <input type="text" class="form-control" placeholder="Firstname" aria-describedby="basic-addon1" [(ngModel)]="searchUserText">
+            <span class="input-group-addon" id="basic-addon1">@</span>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+            <th>Option</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="#user of userList | userFilter:searchUserText; #i=index ">
+            <td>{{user.Firstname}}</td>
+            <td>{{user.Lastname}}</td>
+            <td>{{user.Email}}</td>
+            <td>
+                <button (click)="actionEdit(i)" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-pencil"></span></button>
+                <button (click)="actionRemove(i)"><span class="glyphicon glyphicon-trash"></span></button></td>
+        </tr>
+    </table>
+</div>
+
+
+<modal-user (actionModal)="actionEdit($event)"></modal-user>

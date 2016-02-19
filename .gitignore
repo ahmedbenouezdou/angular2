@@ -6,3 +6,4 @@ libs
 bower_components
 .idea
 *.log
+.editorconfig
