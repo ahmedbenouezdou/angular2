@@ -1,0 +1,6 @@
+{
+  "serverLocal" : {
+    "server":"http://localhost:",
+    "port" : "8082"
+  }
+}
