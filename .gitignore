@@ -3,7 +3,6 @@ src/app/**/*.js
 src/app/**/*.map
 node_modules
 libs
-bower_components
 .idea
 *.log
 .editorconfig
