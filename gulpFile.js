@@ -1,9 +1,21 @@
-var gulp  = require('gulp');
-var inject = require('gulp-inject');
-var connect = require('gulp-connect');
-var bower = require('gulp-bower');
-var vendor = require('gulp-concat-vendor');
-var notify = require('gulp-notify');
-var runSequence = require('run-sequence');
+var gulp        = require('gulp');
+var browserSync = require('browser-sync').create();
 
 
+// Static Server + watching scss/html files
+gulp.task('serve', function() {
+
+    browserSync.init({
+        server: {
+            baseDir: "./"
+        }
+    });
+
+    gulp.watch("src/app/**/*.js", ['js-watch']);
+    gulp.watch("src/app/**/*.html").on('change', browserSync.reload);
+});
+
+gulp.task('js-watch', ['js'], browserSync.reload);
+
+
+gulp.task('default', ['serve']);
